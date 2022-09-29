@@ -14,8 +14,22 @@ const routes: Routes = [
             path: '',
             loadChildren: () =>
               import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+          },
+          {
+            path: 'materias',
+            loadChildren: () =>
+              import('../tab1/materias/materias.module').then(m => m.MateriasPageModule)
+          },
+          {
+            path: 'calificaciones',
+            loadChildren: () =>
+              import('../tab1/calificaciones/calificaciones.module').then(m => m.CalificacionesPageModule)
+          },
+          {
+            path: 'horario',
+            loadChildren: () =>
+              import('../tab1/horario/horario.module').then(m => m.HorarioPageModule)
           }
-          
         ]
       },
       {
