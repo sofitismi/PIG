@@ -8,20 +8,7 @@ const routes: Routes = [
   },{
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },
-  {
-    path: 'materias',
-    loadChildren: () => import('./tab1/materias/materias.module').then( m => m.MateriasPageModule)
-  },
-  {
-    path: 'calificaciones',
-    loadChildren: () => import('./tab1/calificaciones/calificaciones.module').then( m => m.CalificacionesPageModule)
-  },
-  {
-    path: 'horario',
-    loadChildren: () => import('./tab1/horario/horario.module').then( m => m.HorarioPageModule)
   }
-
   
 ];
 @NgModule({
