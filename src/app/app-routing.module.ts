@@ -20,7 +20,8 @@ const routes: Routes = [
   {
     path: 'horario',
     loadChildren: () => import('./tab1/horario/horario.module').then( m => m.HorarioPageModule)
-  },
+  }
+
   
 ];
 @NgModule({

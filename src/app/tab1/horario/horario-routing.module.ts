@@ -7,7 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: HorarioPage
+  },  {
+    path: 'modulo1',
+    loadChildren: () => import('./modulo1/modulo1.module').then( m => m.Modulo1PageModule)
   }
+
 ];
 
 @NgModule({
