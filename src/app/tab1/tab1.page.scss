@@ -1,3 +1,10 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+ion-button {
+  --background: rgb(33, 28, 174);
+  margin: 20px;
+}
+ion-content{
+  --padding-top: 50%;
+}
