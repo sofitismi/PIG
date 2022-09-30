@@ -1,4 +1,6 @@
-
-ion-button {
-    
+app-materias{
+    ion-button {padding: 10px;       
+        text-align: center;
+        width: calc(50% - 10px);
+        float: left;}
 }
