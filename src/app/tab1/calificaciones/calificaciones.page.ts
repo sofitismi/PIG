@@ -7,10 +7,15 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class CalificacionesPage implements OnInit {
-
+first=true;second=false;
   constructor() { }
 
   ngOnInit() {
   }
-
+abrirfirst(){
+  this.first=!this.first;
+}
+abrirsecond(){
+  this.second=!this.second;
+}
 }
