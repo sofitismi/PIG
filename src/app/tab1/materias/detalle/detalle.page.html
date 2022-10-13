@@ -1,6 +1,6 @@
-<!-- <ion-header>
+<ion-header>
   <ion-toolbar>
-    <ion-title>MATERIA</ion-title>
+    <ion-buttons slot="start"> <ion-back-button defaultHref="tabs/tab1/materias" text="Materias"></ion-back-button> </ion-buttons><ion-title>PROGRAMACIÓN</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -33,12 +33,12 @@
       </div>
     </div>
 
-    <ion-button class="clases" expand="block" [routerLink]="['detalle']">Clases</ion-button>
+    <ion-button class="clases" expand="block" [routerLink]="['/tabs/tab1/materias/detalle/informacion']">Clases</ion-button>
   </div>
 
 <div class="cajamateria2">
   <div>Notas</div>
-  <div class="lineanotas"></div>
+  <div class="linea"></div>
 
   <div class="lineascaja2">
     <div>
@@ -70,48 +70,3 @@
 </div>
 
 </ion-content> -->
-
-
-<!-- ------------------------------- -->
-
-<ion-header>
-  <ion-toolbar>
-    <ion-title>CLASES</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <div class="cajaclases1">
-    <div>
-        <div>Clase 4</div>
-        <div class="lineanotas"></div>
-        <div>Archivo</div>
-    </div>
-
-    <div class="lineaclase1">
-      <div>Clase 3</div>
-      <div class="lineanotas"></div>
-      <div>Archivo</div>
-    </div>
-
-    <div class="evaluacion">
-      Evaluacion 18.10
-    </div>
-
-    <div class="lineaclase1">
-      <div>Clase 2</div>
-      <div class="lineanotas"></div>
-      <div>Archivo</div>
-    </div>
-
-    <div class="evaluacion">
-      Trabajo practico 12.07
-    </div>
-
-    <div class="lineaclase1">
-      <div>Clase 1</div>
-      <div class="lineanotas"></div>
-      <div>Archivo</div>
-    </div>
-  </div>
-</ion-content>

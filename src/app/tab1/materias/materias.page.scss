@@ -1,6 +1,36 @@
 app-materias{
-    ion-button {padding: 10px;       
-        text-align: center;
-        width: calc(50% - 10px);
-        float: left;}
-}
+    ion-button {
+        display: block;
+        padding: 10px 2%;
+        width: 48%;
+        float: left;
+        height: 130px;
+        flex-direction: column;
+        --padding-start: 0;
+        --padding-end: 0;
+        --border-radius: 0;
+        --border-color: black;
+        --border-width: 1px;
+        --border-style: solid;}
+        
+        
+        .linea {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .textoa{
+            white-space: normal;
+            background: white;
+            color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom: 1px solid;
+            padding: 5px;
+            width: 100%; 
+            height: 43px;
+        }
+
+       
+    }

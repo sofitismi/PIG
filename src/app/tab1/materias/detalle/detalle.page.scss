@@ -1,6 +1,6 @@
 .cajamateria1{
     margin: 12%;
-    margin-top: 20%;
+    margin-top: 8%;
     width: 74%;
     height: 50%;
 }
@@ -33,7 +33,7 @@
     height: 50%;
 }
 
-.lineanotas{
+.linea{
     border: 1px solid #ffd000;
     height: 7px;
     background-color: #ffd000;
@@ -60,28 +60,3 @@ p{
     font-size: 14px;
 }
 
-
-// -----------------------------------------
-
-
-.cajaclases1{
-    margin: 12%;
-    margin-top: 20%;
-    width: 74%;
-    height: 50%;
-}
-
-.lineaclase1{
-    margin-top: 5%;
-}
-
-.evaluacion{
-    width: 100%;
-    background-color: #ffd000;
-    height: 13%;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 10px;
-}
