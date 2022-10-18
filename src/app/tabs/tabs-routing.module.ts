@@ -60,6 +60,10 @@ const routes: Routes = [
             path: '',
             loadChildren: () =>
               import('../tab4/tab4.module').then(m => m.Tab4PageModule)
+          },
+          {
+            path: 'dias',
+            loadChildren: () => import('./tab4/dias/dias.module').then( m => m.DiasPageModule)
           }
         ]
       },
@@ -70,7 +74,8 @@ const routes: Routes = [
         pathMatch: 'full'
       }
     ]
-  }
+  },
+ 
 ];
 
 @NgModule({

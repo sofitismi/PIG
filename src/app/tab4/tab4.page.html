@@ -1,17 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <h1>
+      CALENDARIO
+    </h1>
+    <ion-buttons slot="start"> <ion-back-button defaultHref="tabs/tab1/horario" text=""></ion-back-button> </ion-buttons> 
+    <ion-buttons slot="end"> <ion-icon name="person-circle" class="persona"> </ion-icon> </ion-buttons> 
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+  <h3> <ion-icon class="nuevatareaicono" name="ellipse"></ion-icon> Nueva Tarea </h3>
+  <h3> <ion-icon class="evaluacionesicono" name="ellipse"> </ion-icon> Evaluaciones </h3>
+  <h3> <ion-icon class="comienzofinicono" name="ellipse"></ion-icon> Comienzo/Fin de Bloque </h3>
+  <br>
+  <h2>AGOSTO 2022</h2>
+  <table>
+    <tr><th width="20%">LUN</th><th width="20%">MAR</th><th width="20%">MIE</th><th width="20%">JUE</th><th width="20%">VIE</th></tr>
+    <tr><td><span class="comienzofin"> 1 </span></td><td><span class="nuevatarea">2</span></td><td><span class="hoy">3</span></td><td><span class="nuevatarea">4</span></td><td><span>5</span></td></tr>
+    <tr><td><span>8 </span></td><td><span>9</span></td><td><span class="nuevatarea" [routerLink]="['/tabs/tab4/dias']" >10 </span></td><td><span>11</span></td><td><span>12</span></td></tr>
+    <tr><td><span>15 </span></td><td><span>16</span></td><td><span>17</span></td><td><span>18</span></td><td><span>19</span></td></tr>
+    <tr><td><span>22 </span></td><td><span>23</span></td><td><span class="evaluaciones">24</span></td><td><span>25</span></td><td><span class="comienzofin">26</span></td></tr>
+    <tr><td><span>29 </span></td><td><span>30</span></td><td><span>31</span></td><td><span>1</span></td><td><span>2</span></td></tr>
+    </table> 
+    <p>Notas</p> 

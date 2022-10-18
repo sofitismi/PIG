@@ -3,7 +3,9 @@ ion-content ion-toolbar {
 }
 app-tab2{
   ionic-content{
-    padding-top: 0;
+    --padding-top: 0;
+    --padding-start: 20px;
+    --padding-end: 20px;
   }
 }
 h1{
@@ -11,7 +13,7 @@ h1{
   font-style:bold;
 }
 h2{
-  font-size: 10px;
+  font-size: 8px;
 }
 span{
 background-color: rgba(0, 33, 223, 0.863);
