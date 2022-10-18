@@ -2,13 +2,13 @@
   <ion-toolbar>
     <ion-title>Calificaciones</ion-title>
     <ion-buttons slot="end"> <ion-icon name="person-circle" class="persona"> </ion-icon> </ion-buttons> 
-    <ion-buttons slot="start"> <ion-back-button></ion-back-button> </ion-buttons> 
+    <ion-buttons slot="start"> <ion-back-button text=" " defaultHref="/tabs/tab1"></ion-back-button> </ion-buttons> 
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div id="first">
-  <h1 (click)="abrirfirst()"> 1° AÑO - 2022 </h1>
+  <h1 (click)="abrirfirst()"> 1° AÑO - 2022 <ion-icon name="chevron-down-outline" *ngIf="first==false"></ion-icon> <ion-icon name="chevron-up-outline" *ngIf="first==true"></ion-icon>  </h1>
   <style type="text/css">
     .tftable {font-family: 'Open Sans', sans-serif;font: size 12px;font-weight:bold;color:#000000;width:100%;border-width: 1px;border-color: #000000;border-collapse: collapse;}
     .tftable th {font-family: 'Open Sans', sans-serif;font: size 12px;;font-weight:bold;background-color:#ffffff;border-width: 1px;padding: 8px;border-style: solid;border-color: #000000;text-align:left;}
@@ -21,7 +21,7 @@
     <tr><th width="15%">Materias</th><th width="5%">M1</th><th width="5%">M2</th><th width="5%">M3</th><th width="5%">M4</th><th width="5%">Final</th></tr>
     <tr><td class="materia1">Marketing y la estratégia comercial</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td class="materia2">Matemática estrategica</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td class="materia3">Macroeconomía y Microeconomía</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    <tr><td class="materia3">Macro y Microeconomía</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td class="materia4">Programación para marketers</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td class="materia5">Mercado y producto</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     <tr><td class="materia6">Creatividad y estrategia de contenidos</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
@@ -32,7 +32,7 @@
     </table>  
   </div>
   <div id="second">
-  <h1 (click)="abrirsecond()"> 2° AÑO - 2023 </h1>
+  <h1 (click)="abrirsecond()"> 2° AÑO - 2023 <ion-icon name="chevron-down-outline" *ngIf="second==false"></ion-icon> <ion-icon name="chevron-up-outline" *ngIf="second==true"></ion-icon> </h1>
   <style type="text/css">
     .tftable {font-family: 'Open Sans', sans-serif;font: size 12px;font-weight:bold;color:#000000;width:100%;border-width: 1px;border-color: #000000;border-collapse: collapse;}
     .tftable th {font-family: 'Open Sans', sans-serif;font: size 12px;font-weight:bold;;background-color:#ffffff;border-width: 1px;padding: 8px;border-style: solid;border-color: #000000;text-align:left;}
@@ -55,4 +55,18 @@
     <tr><td class="materia10">Trabajo Final</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
     </table>
   </div>  
+  <div id="promedio">
+    <h1 (click)="abrirthird()">PROMEDIO <ion-icon name="chevron-down-outline" *ngIf="third==false"></ion-icon> <ion-icon name="chevron-up-outline" *ngIf="third==true"></ion-icon> </h1>
+   <div class= "boton" *ngIf="third==true">
+     <div id="2022">
+       <h2><ion-icon name="stats-chart-outline"></ion-icon> <br> Promedio de las materias calificadas en 2022 </h2>
+     </div>
+     <div id="2023">
+        <h2><ion-icon name="stats-chart-outline"></ion-icon> <br> Promedio de las materias calificadas en 2023 </h2>
+     </div>
+     <div id="final">
+       <h2><ion-icon name="stats-chart-outline"></ion-icon> <br> Promedio final  </h2>
+     </div>
+   </div>
+  </div>
 </ion-content>
